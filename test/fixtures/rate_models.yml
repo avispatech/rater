@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2019-09-24 13:53:51
+  currency: 1.5
+  equivalence: 1.5
+
+two:
+  date: 2019-09-24 13:53:51
+  currency: 1.5
+  equivalence: 1.5
