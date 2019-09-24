@@ -1,0 +1,2 @@
+class RateModel < ApplicationRecord
+end
