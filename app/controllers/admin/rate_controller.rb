@@ -6,11 +6,15 @@ class Admin::RateController < ApplicationController
 
   def show
     @rate = RateModel.find(params[:id])
+  rescue => e
+    @error = e
   end
 
   def create
     @rate = RateModel.create(date: params[:date], currency: params[:currency],
             equivalence: params[:equivalence], name: params[:name])
+  rescue => e
+    @error = e
   end
 
   def update

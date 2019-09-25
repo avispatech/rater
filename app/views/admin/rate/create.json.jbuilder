@@ -1,4 +1,6 @@
-if @rate.valid?
+if @error
+  json.error @error
+elsif @rate.valid?
   json.data do
     json.id @rate.id
     json.type 'rates'
