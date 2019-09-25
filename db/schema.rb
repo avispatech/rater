@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2019_09_24_165351) do
 
   create_table "rate_models", force: :cascade do |t|
     t.datetime "date"
-    t.float "currency"
+    t.string "currency"
     t.float "equivalence"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
