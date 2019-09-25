@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :rate
   end
+  # get '/rates/:currency', :to => ''
 end
