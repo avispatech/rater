@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  onstraints subdomain: 'rates' do
+  constraints subdomain: 'rates' do
       namespace :admin do
         resources :rate
     end
