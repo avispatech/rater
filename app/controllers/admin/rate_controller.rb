@@ -12,7 +12,7 @@ class Admin::RateController < ApplicationController
 
   def create
     @rate = RateModel.new(date: params[:date], currency: params[:currency],
-                          equivalence: params[:equivalence])
+                          equivalence: params[:equivalence], name: params[:name])
 
     if @rate.save
       render json: @rate
@@ -26,6 +26,7 @@ class Admin::RateController < ApplicationController
 
     if @rate
       @rate.date = params[:date]
+      @rate.name = params[:name]
       @rate.currency = params[:currency]
       @rate.equivalence = params[:equivalence]
       render json: @rate
