@@ -3,7 +3,7 @@
 Rater es una aplicación que se conecta a sitios que tienen información de conversión
 de moneda, los captura y los deja disponible como API para otros servicios que lo necesiten.
 
-Este es un demo realizado para el taller dictado por [https://avispa.tech](AvispaTech) sobre scapring
+Este es un demo realizado para el taller dictado por [AvispaTech](https://avispa.tech) sobre scapring
 y trabajos offline de Women Who Code Chile.
 
 ## Insumos necesarios
