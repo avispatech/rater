@@ -10,11 +10,12 @@ y trabajos offline de Women Who Code Chile.
 
 Para correr este demo te sugerimos tener:
 
-  - RVM.io 
+  - [RVM](https://rvm.io)
   - Ruby 2.6.3
   - Postgresql
   - Chrome
   - Redis
+  - [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
   
 ## Instrucciones iniciales
 
