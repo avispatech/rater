@@ -1,25 +1,35 @@
-# README
+# RATER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rater es una aplicación que se conecta a sitios que tienen información de conversión
+de moneda, los captura y los deja disponible como API para otros servicios que lo necesiten.
 
-Things you may want to cover:
+Este es un demo realizado para el taller dictado por [https://avispa.tech](AvispaTech) sobre scapring
+y trabajos offline de Women Who Code Chile.
 
-* Ruby version
+## Insumos necesarios
 
-* System dependencies
+Para correr este demo te sugerimos tener:
 
-* Configuration
+  - RVM.io 
+  - Ruby 2.6.3
+  - Postgresql
+  - Chrome
+  - Redis
+  
+## Instrucciones iniciales
 
-* Database creation
+Descarga este repositorio
 
-* Database initialization
+Asegúrate que estás con Ruby 2.6.3
 
-* How to run the test suite
+Instala las dependencias usando `bundle`
 
-* Services (job queues, cache servers, search engines, etc.)
+Crea la base de datos `rate_dev`. Puedes hacerlo a mano o usando el comando `rails db:create`
 
-* Deployment instructions
+Corre la migración con `rails db:migrate`
 
-* ...
-# rater
+Abre la consola de rails usando `rails c`
+
+Corre el Job de prueba de conexión `ChromeTestJob.perform_now`
+
+Si ves la página de Rater en tu navegador, el repo está listo para ir al taller!
