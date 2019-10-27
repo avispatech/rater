@@ -11,7 +11,7 @@ y trabajos offline de Women Who Code Chile.
 Para correr este demo te sugerimos tener:
 
   - [RVM](https://rvm.io)
-  - Ruby 2.6.3
+  - Ruby 2.6.4
   - Postgresql
   - Chrome
   - Redis
@@ -21,7 +21,7 @@ Para correr este demo te sugerimos tener:
 
 Descarga este repositorio
 
-Asegúrate que estás con Ruby 2.6.3
+Asegúrate que estás con Ruby 2.6.4
 
 Instala las dependencias usando `bundle`
 
