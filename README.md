@@ -11,7 +11,7 @@ y trabajos offline de Women Who Code Chile.
 Para correr este demo te sugerimos tener:
 
   - [RVM](https://rvm.io)
-  - Ruby 2.6.3
+  - Ruby 2.6.4
   - Postgresql
   - Chrome
   - Redis
@@ -21,11 +21,11 @@ Para correr este demo te sugerimos tener:
 
 Descarga este repositorio
 
-Asegúrate que estás con Ruby 2.6.3
+Asegúrate que estás con Ruby 2.6.4
 
 Instala las dependencias usando `bundle`
 
-Crea la base de datos `rate_dev`. Puedes hacerlo a mano o usando el comando `rails db:create`
+Crea la base de datos `rate_dev`. Puedes hacerlo a mano o usando el comando `rails db:create` también es posible leer la variable de entorno `RATER_DB`
 
 Si Yarn lanza un error que dice "Your Yarn packages are out of date!" ejecuta el comando `yarn install --check-files`
 
