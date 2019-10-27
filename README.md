@@ -25,7 +25,7 @@ Asegúrate que estás con Ruby 2.6.3
 
 Instala las dependencias usando `bundle`
 
-Crea la base de datos `rate_dev`. Puedes hacerlo a mano o usando el comando `rails db:create`
+Crea la base de datos `rate_dev`. Puedes hacerlo a mano o usando el comando `rails db:create` también es posible leer la variable de entorno `RATER_DB`
 
 Si Yarn lanza un error que dice "Your Yarn packages are out of date!" ejecuta el comando `yarn install --check-files`
 
