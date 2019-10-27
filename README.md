@@ -36,3 +36,5 @@ Abre la consola de rails usando `rails c`
 Corre el Job de prueba de conexión `ChromeTestJob.perform_now`
 
 Si ves la página de Rater en tu navegador, el repo está listo para ir al taller!
+
+![Código funcionando](/proof.jpg)
