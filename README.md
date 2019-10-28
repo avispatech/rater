@@ -14,6 +14,7 @@ Para correr este demo te sugerimos tener:
   - Ruby 2.6.3
   - Postgresql
   - Chrome
+  - Chromedriver
   - Redis
   - [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
   
@@ -38,3 +39,21 @@ Corre el Job de prueba de conexión `ChromeTestJob.perform_now`
 Si ves la página de Rater en tu navegador, el repo está listo para ir al taller!
 
 ![Código funcionando](/proof.jpg)
+
+
+## Troubleshooting
+
+La parte más compleja es usar Chromedriver, que es un elemento separado de Chrome y que interactúa con su misma versión de Chrome solamente. Si tienes problemas con esto, la solución más común es la siguiente:
+
+  - Busca tu versión de Chrome (ej. 78)
+  - Entra a https://chromedriver.chromium.org/downloads
+  - Descarga la versión que te corresponda
+  - Descomprime el archivo
+  - Dejar disponible tu ejecutable del sistema para que quede disponible para que tu proyecto lo lea.
+  
+Esto puede variar según plataforma, en linux es algo así. Si el archivo fue bajado a Downloads
+
+    sudo ln -ls ./chromedriver /usr/bin/chromedriver
+    
+
+
