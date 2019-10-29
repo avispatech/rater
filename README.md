@@ -37,4 +37,6 @@ Corre el Job de prueba de conexión `ChromeTestJob.perform_now`
 
 Si ves la página de Rater en tu navegador, el repo está listo para ir al taller!
 
+Funciona `heroku local`? Si no y te tira  `Errno::ENOENT: No such file or directory @ rb_sysopen - tmp/pids/server.pid` prueba con `rake tmp:create`
+
 ![Código funcionando](/proof.jpg)
