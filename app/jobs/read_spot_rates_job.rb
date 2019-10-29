@@ -15,8 +15,8 @@ class ReadSpotRatesJob < ApplicationJob
     bro.close
   end
 
-  BASE_URL_PROD = 'http://rates-static.avispa.work/'
-  BASE_URL = 'http://127.0.0.1:4000/'
+  BASE_URL = 'http://rates-static.avispa.work/'
+  BASE_URL_DEV = 'http://127.0.0.1:4000/'
 
   def login(bro)
     bro.goto BASE_URL
@@ -64,7 +64,7 @@ class ReadSpotRatesJob < ApplicationJob
   def save_rate(cur, val)
     currency = CURRENCIES[cur]
     value = val.delete('$').tr('.', '').tr(',', '.').to_f
-    rate = Rate.create(name: cur,
+    rate = Rate.new(name: cur,
                 currency: currency,
                 date: Date.today,
                 equivalence: value)

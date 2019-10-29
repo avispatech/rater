@@ -3,5 +3,8 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :rate
   end
-  get 'rate/:currency', :to => 'rate#show', as: 'get_currency'
+  get 'rate/:currency', to: 'rate#show', as: 'get_currency'
+
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 end

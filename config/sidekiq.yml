@@ -1,0 +1,14 @@
+---
+:concurrency: 5
+staging:
+  :concurrency: 10
+production:
+  :concurrency: 20
+:queues:
+  - critical
+  - default
+
+:schedule:
+  chrome_test_job:
+    cron: '0 * * * * *'   # Runs once per minute
+    class: ChromeTestJob

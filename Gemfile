@@ -22,6 +22,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 gem 'dotenv-rails'
 
+
+
 group :production do
   gem 'sentry'
 end
@@ -32,6 +34,8 @@ end
 # gem 'image_processing', '~> 1.2'
 
 gem 'sidekiq'
+gem 'sidekiq-scheduler'
+
 gem 'watir'
 
 # Reduces boot times through caching; required in config/boot.rb
