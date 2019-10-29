@@ -7,7 +7,8 @@ class ReadMonthJob < ApplicationJob
     # Do something later
     bro = Watir::Browser.new :chrome
     tbl = open_page(bro, url)
-    scan_table(tbl)
+    values = scan_table(tbl)
+    Rails.logger.info values.inspect
   rescue StandardError => e
     Rails.logger.error(e.message)
     raise e
@@ -27,10 +28,9 @@ class ReadMonthJob < ApplicationJob
 
   def scan_table(tbl)
     tbl.tbody.trs.collect do |tr|
+      tr.flash(flashes: 3)
       Rails.logger.info [@year.to_i, MONTHS.index(@month_name) + 1, tr.th.text.to_i]
-      d = Date.new(@year,
-        MONTHS.index(@month_name) + 1,
-        tr.th.text)
+      d = Date.new(@year.to_i,MONTHS.index(@month_name) + 1, tr.th.text.to_i)
       [d, tr.td.text]
     end.to_h
   end

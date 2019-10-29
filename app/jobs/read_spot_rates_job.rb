@@ -64,7 +64,7 @@ class ReadSpotRatesJob < ApplicationJob
   def save_rate(cur, val)
     currency = CURRENCIES[cur]
     value = val.delete('$').tr('.', '').tr(',', '.').to_f
-    rate = Rate.new(name: cur,
+    rate = Rate.create(name: cur,
                 currency: currency,
                 date: Date.today,
                 equivalence: value)
